@@ -116,3 +116,4 @@ https_proxy=http://127.0.0.1:7890
 [[ $- != *i* ]] && return
 # Otherwise start tmux
 [[ -z "$TMUX" ]] && exec tmux
+. "/usr/share/autojump/autojump.sh"

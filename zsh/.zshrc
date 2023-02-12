@@ -3,6 +3,16 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH=/opt/devkitpro:$PATH
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitarm
+# export PKG_CONFIG_PATH=/usr/include/SDL2
+export PATH=/usr/include/freetype2:$PATH
+export RAYLIB_NX=/usr/include/raylib-nx #switch version raylib
+# export RAYLIB_INSTALL_PATH=$PATH
+# export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path/to/glibc/headers
+
+# export CXXFLAGS="-isystem /opt/devkitpro/libnx/include/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,7 +87,7 @@ ZSH_THEME="simonoff"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+source /etc/profile.d/devkit-env.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -107,6 +117,8 @@ alias vim="/usr/bin/nvim"
 alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
 alias exitproxy='unset http_proxy https_proxy'
 alias rm='rm -i'
+# alias df='dwarffortress'
+source "$HOME/.cargo/env"
 set -o vi
 
 http_proxy=http://127.0.0.1:7890 

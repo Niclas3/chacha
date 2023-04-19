@@ -4,11 +4,24 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/devkitpro:$PATH
+export DEVKITA64=/opt/devkitpro/devkitA64/bin
+export PATH=$DEVKITA64:$PATH
 export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=/opt/devkitarm
-# export PKG_CONFIG_PATH=/usr/include/SDL2
+export PATH=/usr/bin:$PATH
+#for SDL2 configration
+export PKG_CONFIG_PATH=/usr/include/SDL2:$PKG_CONFIG_PATH
+
+# for libtcod configration
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+export LD_LIBRARY_PATH=/usr/local/lib
+
 export PATH=/usr/include/freetype2:$PATH
 export RAYLIB_NX=/usr/include/raylib-nx #switch version raylib
+export PATH=$PATH:/opt/devkitpro/portlibs/switch/include/SDL2/
+
+export PATH=$PATH:$HOME/.local/bin
+
 # export RAYLIB_INSTALL_PATH=$PATH
 # export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path/to/glibc/headers
 

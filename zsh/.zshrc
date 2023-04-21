@@ -130,9 +130,13 @@ alias vim="/usr/bin/nvim"
 alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
 alias exitproxy='unset http_proxy https_proxy'
 alias rm='rm -i'
+alias reload_zshrc="source ~/.zshrc"
 # alias df='dwarffortress'
 source "$HOME/.cargo/env"
 set -o vi
+function xvim(){
+    xxd $1 | vim
+}
 
 http_proxy=http://127.0.0.1:7890 
 https_proxy=http://127.0.0.1:7890

@@ -22,6 +22,7 @@ export PATH=$PATH:/opt/devkitpro/portlibs/switch/include/SDL2/
 
 export PATH=$PATH:$HOME/.local/bin
 
+export GCC_COLORS=auto
 # export RAYLIB_INSTALL_PATH=$PATH
 # export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path/to/glibc/headers
 
